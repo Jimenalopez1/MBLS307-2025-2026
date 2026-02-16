@@ -211,3 +211,11 @@ legend(
   title = "Maturity stage"
 )
 dev.off()
+
+#Exercise
+install.packages("ggplot2")
+library(ggplot2)
+ggplot(mpg, aes(x = class, y = displ)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2) +
+  theme_classic()
